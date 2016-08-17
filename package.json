@@ -1,0 +1,21 @@
+{
+    "name": "generator-stakater",
+    "version": "0.1.2",
+    "description": "Generator for Stakater",
+    "author": {
+        "name": "Hasnain Syed"
+    },
+    "files": [
+        "app"
+    ],
+    "keywords": [
+        "yeoman-generator"
+    ],
+    "dependencies": {
+        "chalk": "^1.1.1",
+        "yeoman-generator": "^0.20.3",
+        "yosay": "^1.1.0",
+	"enum": "^2.3.0",
+	"path": "^0.12.7"
+    }
+}

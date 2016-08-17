@@ -1,0 +1,14 @@
+<pipeline name="app-deploy-dev" template="stakater_deploy_cluster">
+	<params>
+		<param name="SOURCE_DIR" />
+		<param name="APP_NAME"><%= appName %></param>
+		<param name="CLUSTER_ENV">dev</param>
+		<param name="ROUTE53_HOSTED_ZONE_NAME">coreos-cluster.local.</param>
+		<param name="APP_DOCKER_IMAGE"></param>
+		<param name="APP_DOCKER_OPTS"></param>
+	</params>
+	
+	<materials>
+		<pipeline pipelineName="app-build-dev" stageName="Publish-Docker-Image" />
+	</materials>
+</pipeline>
